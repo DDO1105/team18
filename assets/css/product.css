@@ -1,0 +1,288 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    /*background-color: #f8f8f8;*/
+
+
+    background-color: #f2cc8f;
+
+    background: radial-gradient(circle, transparent 20%, #f2cc8f 20%, #f2cc8f 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #f2cc8f 20%, #f2cc8f 80%, transparent 80%, transparent) 25px 25px, linear-gradient(#cca360 2px, transparent 2px) 0 -1px, linear-gradient(90deg, #cca360 2px, #f2cc8f 2px) -1px 0;
+    background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+
+}
+
+
+
+/* Main Content */
+.content {
+    display: grid;
+    grid-template-columns: 100px 1fr 5fr 100px;
+    grid-template-rows: auto;
+
+    gap: 20px;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+/* Sidebar */
+.sidebar {
+    grid-column: 2 / 3; 
+
+
+    /*width: 20%;*/
+    padding: 10px;
+    background-color: #d3ac6dc4;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    font-size: 16px;
+    color: #01161e;
+
+
+    border: 4px solid transparent; /* 初始邊框透明 */
+    border-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M5 5 h90 v90 h-90 z" fill="none" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10 5"/></svg>') 20 stretch; /* 使用 SVG 模擬手繪風 */
+    padding: 10px; /* 內邊距 */
+}
+.sidebar .category {
+    margin-bottom: 10px;
+}
+.sidebar .category .submenu {
+    display: none;
+    margin-top: 10px;
+}
+.sidebar .category-item {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.sidebar .category-item:hover {
+    background-color: #9ec1a3;
+}
+.sidebar .category-item.active .submenu {
+    display: block;
+}
+.sidebar a {
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #01161e;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.sidebar a:hover {
+    background-color: #ffffff;
+    color: #5561ab;
+}
+
+
+/*sell place*/
+.main-content {
+    grid-column: 3 /4; 
+}
+
+.product-category, .recommendations, .special-offers {
+    padding: 15px;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+}
+
+.product-container {
+    display: flex;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 90%;
+    background-color: #f4e9cd;
+    
+}
+
+.image {
+    flex: 1;
+    margin-right: 15px;
+    margin:60px 10px ;
+
+    border: 4px solid transparent; /* 初始邊框透明 */
+    border-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M5 5 h90 v90 h-90 z" fill="none" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10 5"/></svg>') 20 stretch; /* 使用 SVG 模擬手繪風 */ 
+    
+    padding: 15px; /* 內邊距 */   
+   
+    background-color: #fae1dd;
+    opacity: 0.8;
+    background: repeating-linear-gradient( -45deg, #d8aa96, #d8aa96 5px, #fae1dd 5px, #fae1dd 25px );
+}
+
+.image img {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    align-items: center;
+}
+.details {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-name {
+    padding: 10px;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+.pricing {
+    display: grid;
+    grid-template-columns: 35px 2fr 245px 3fr 5px;
+    grid-template-rows: auto;
+
+    gap:10px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.price{
+    font-size: 30px;
+    grid-column: 2 /3; 
+
+}
+.star{
+    color: rgb(0, 0, 0);
+    grid-column: 4 /5; 
+}
+.descrip{
+    display: grid;
+    grid-template-columns: 25px 1fr 3fr 20px;
+    grid-template-rows: auto;
+}
+
+.description {
+    display: grid;
+    grid-template-columns: 5px 1fr 3fr 5px;
+    grid-template-rows: auto;
+
+    grid-column: 2 /4; 
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.power{
+    grid-column: 2 /3; 
+    font-size: 20px;
+}
+.star-1{
+    color: rgb(0, 0, 0);
+    grid-column: 3 /4; 
+}
+.introduce_good{
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.add-to-cart {
+    color: rgb(1, 1, 1);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    width: 25%;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    float: right;
+    background-color: #84A59D;
+}
+
+.add-to-cart:hover {
+    background-color: #c0392b;
+}
+
+.recommend{
+    display: grid;
+    grid-template-columns: 140px 1fr 140px;
+    grid-template-rows: auto;
+}
+.recommendations{
+    grid-column: 2 /3; 
+    align-items: center;
+    padding: 20px;
+
+    font-size: 40px;
+    text-align: center;
+    
+   
+}
+.recommendationsad{
+    grid-column: 2 /3; 
+    align-items: center;
+    padding: 20px;
+
+    font-size: 40px;
+    text-align: center;
+    border: 10px solid transparent; /* 初始邊框透明 */
+    border-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M5 5 h90 v90 h-90 z" fill="none" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10 5"/></svg>') 20 stretch; /* 使用 SVG 模擬手繪風 */ 
+    padding: 10px; /* 內邊距 */
+    background-color: #e07a5f; /* 背景色 */
+ }
+.product-grid {
+    display: grid;
+    grid-column: 2 /3; 
+    grid-template-columns: repeat(4, minmax(auto, 1fr));
+    gap: 25px;
+    padding: 20px;
+
+
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.product p {
+    margin: 15px 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+
+footer {
+    background-color: #84A59D;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 5px;
+}

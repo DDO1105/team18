@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>結帳頁面</title>
+    <link rel="stylesheet" href="../assets/css/member.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="../index.html"><img class="logopic" src="../assets/pic/logo.png" alt="Logo"></a></div>
+        <div class="midheader">
+            <ul class="drop-down-menu">
+                <li>
+                    <a href="../index.html">首頁</a>
+                    <ul>
+                        <li><a href="../index.html#z1">優惠活動</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="about.html">關於我們</a>
+
+                </li>
+                <li>
+                    <a href="content_cat/contents.html">貓舍</a>
+
+                </li>
+                <li>
+                    <a >會員專區</a>
+                    <ul>
+                        <li><a href="member.HTML">會員中心</a></li>
+                        <li><a href="register.HTML">會員註冊</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="content_cat/contents.html">品種</a>
+                    <ul>
+                        <li><a href="content_cat/long_cat.html">長毛貓</a></li>
+                        <li><a href="content_cat/short_cat.html">短毛貓</a></li>
+                        <li><a href="content_cat/meme_cat.html">迷因貓</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="content_cat/cat_tool.html">用品</a>
+                    <ul>
+                        <li><a href="content_cat/cat_sand.html">貓砂</a></li>
+                        <li><a href="content_cat/cat_food.html">飼料</a></li>
+                        <li><a href="content_cat/cat_toy.html">玩具</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <nav class="rightheader">
+            <a href="#my-modal" class="button"><iconify-icon icon="mdi:account-outline" width="30" height="30">
+                <div id="my-modal" class="modalable">
+                    <div class="modal-inner">
+                        <a class="modal-close" href="#nowhere">&times;</a>
+                        <div class="modal-title">登入</div>
+                        <div class="modal-body">
+                            <form >
+                                <ul>
+                                    <li>帳號︰<input class="input2" type="text" name="user" /><br/></li>
+                                    <li>密碼︰<input class="input2" type="text" name="password" /><br/></li>
+                                    <div class="logindisplay"><input class="button2" type="submit" value="登入" /></div>
+                                </ul>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </iconify-icon></a>
+            <a href="payment.html" class="cart-icon">
+                <iconify-icon icon="mdi:cart-outline" width="30" height="30"></iconify-icon>
+                <span class="cart-count">0</span>
+            </a>
+            <a href="#"><iconify-icon id="search-icon" icon="material-symbols:search" width="30" height="30"></iconify-icon></a>
+            <input type="text" id="search-input" placeholder="搜尋商品..." style="display:none;">
+        </nav>
+    </header>
+    <div class="area1"> 
+        <h2>會員中心</h2>
+    </div>
+    <div class="area2">
+        <table>
+            <tr>
+              <td class="regtd">使用者名稱 :</td>
+              <td>野員廣漬</td>
+            </tr>
+            <tr>
+              <td class="regtd">帳號:</td>
+              <td>BUY2330</td>
+            </tr>
+            <tr>
+              <td class="regtd">密碼:</td>
+              <td>**************</td>
+            </tr>
+            <tr>
+              <td class="regtd">電話:</td>
+              <td>0955155255</td>
+            </tr>
+            <tr>
+              <td class="regtd">住址:</td>
+              <td>桃園市中壢區中北路200號</td>
+            </tr>
+          </table>
+          <br>
+          
+          <br>
+          <table>
+            <tr>
+                <th>購買紀錄</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>購買日期</td>
+                <td>品名</td> 
+                <td>數量</td>
+                <td>單價</td>
+                <td>小計</td>
+            </tr>
+            <tr>
+                <td>2024/9/18</td>
+                <td>大幅狗</td> 
+                <td>1</td>
+                <td>100</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>2024/7/21</td>
+                <td>新之助貓砂</td> 
+                <td>5</td>
+                <td>500</td>
+                <td>2500</td>
+            </tr>
+            <tr>
+                <td>2024/5/20</td>
+                <td>阿鵝牌逗貓棒</td> 
+                <td>2</td>
+                <td>120</td>
+                <td>240</td>
+            </tr>
+    </table>
+    <br>
+    <a href="memberchange.HTML"><input class="button3" type="submit" value="修改會員資訊"></a>
+    </div>
+    <div class="area4">
+        <p>官方客服LINE: @monstercat02 &nbsp;
+            客服專線: 03-123-321 &nbsp;
+            客服時間: 10:00 ~ 17:00 &nbsp;
+            信箱: meow@gmail.com &nbsp;
+            地址: 桃園市中壢區中北路200號
+        </p>
+    </div>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/2.2.0/iconify-icon.min.js"></script>
+</body>
+</html>

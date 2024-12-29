@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>結帳頁面</title>
+    <link rel="stylesheet" href="../assets/css/payment.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="../index.html"><img class="logopic" src="../assets/pic/logo.png" alt="Logo"></a></div>
+        <div class="midheader">
+            <ul class="drop-down-menu">
+                <li>
+                    <a href="../index.html">首頁</a>
+                    <ul>
+                        <li><a href="../index.html#z1">優惠活動</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="about.html">關於我們</a>
+
+                </li>
+                <li>
+                    <a href="content_cat/contents.html">貓舍</a>
+
+                </li>
+                <li>
+                    <a >會員專區</a>
+                    <ul>
+                        <li><a href="member.HTML">會員中心</a></li>
+                        <li><a href="register.HTML">會員註冊</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="contents.HTML">品種</a>
+                    <ul>
+                        <li><a href="content_cat/long_cat.html">長毛貓</a></li>
+                        <li><a href="content_cat/short_cat.html">短毛貓</a></li>
+                        <li><a href="content_cat/meme_cat.html">迷因貓</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="content_cat/cat_tool.html">用品</a>
+                    <ul>
+                        <li><a href="content_cat/cat_sand.html">貓砂</a></li>
+                        <li><a href="content_cat/cat_food.html">飼料</a></li>
+                        <li><a href="content_cat/cat_toy.html">玩具</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <nav class="rightheader">
+            <a href="#my-modal" class="button"><iconify-icon icon="mdi:account-outline" width="30" height="30">
+                <div id="my-modal" class="modalable">
+                    <div class="modal-inner">
+                        <a class="modal-close" href="#nowhere">&times;</a>
+                        <div class="modal-title">登入</div>
+                        <div class="modal-body">
+                            <form >
+                                <ul>
+                                    <li>帳號︰<input class="input2" type="text" name="user" /><br/></li>
+                                    <li>密碼︰<input class="input2" type="text" name="password" /><br/></li>
+                                    <div class="logindisplay"><input class="button2" type="submit" value="登入" /></div>
+                                </ul>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </iconify-icon></a>
+            <a href="payment.html" class="cart-icon">
+                <iconify-icon icon="mdi:cart-outline" width="30" height="30"></iconify-icon>
+                <span class="cart-count">0</span>
+            </a>
+            <a href="#"><iconify-icon id="search-icon" icon="material-symbols:search" width="30" height="30"></iconify-icon></a>
+            <input type="text" id="search-input" placeholder="搜尋商品..." style="display:none;">
+        </nav>
+    </header>
+    <div class="area1"> 
+        <p class="mem">訂單確認 > 會員資料確認 > 完成購物</p>
+    </div>
+    <div class="area2">
+        <h2 class="mem">訂單確認</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>品名</th>
+                    <th>圖片</th>
+                    <th>數量</th>
+                    <th>單價</th>
+                    <th>小計</th>
+                    <th>刪除</th>
+                </tr>
+            </thead>
+            <tbody id="cart-table-body">
+            </tbody>
+        </table>
+    </div>
+    <div class="area3">
+        <p class="mem">會員資料確認</p>
+        <form>
+            <div class="memberdisplay">
+                <div class="section">
+                    <h2>購買資訊</h2>
+                    <hr>
+                    <select>
+                        <option>請選擇 運送方式</option>
+                        <option>宅配</option>
+                        <option>超商取貨</option>
+                        <option>郵寄</option>
+                    </select>
+                    <select>
+                        <option>請選擇 付款方式</option>
+                        <option>信用卡</option>
+                        <option>ATM轉帳</option>
+                        <option>貨到付款</option>
+                        <option>電子支付</option>
+                    </select>
+                </div>
+                <div class="section">
+                    <h2>購買人資料</h2>
+                    <hr>
+                    <input type="text" placeholder="請輸入購買人姓名">
+                    <input type="text" placeholder="請輸入聯絡電話">
+                    <p>務必正確輸入購買人姓名確保正確送達。</p>
+                    <input type="text" placeholder="地址">
+                    <input type="email" placeholder="信箱">
+                    <p>我們會將您的訂單通知信寄送至此。</p>
+                    
+                    <input type="text" placeholder="請輸入收件人姓名 務必正確輸入收件人姓名保正確送達。">
+                    <input type="text" placeholder="請輸入聯絡電話"><br>
+                    <br>
+                    <textarea placeholder="請輸入客戶備註(選填)"></textarea><br>
+                    <label>
+                        <input type="checkbox" checked> 我想收到最新資訊及優惠方案
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" checked> 我已閱讀「售後服務」並同意。
+                    </label><br>
+                </div>
+            </div>
+        </form>
+        <br>
+        <div style="text-align: right;">
+         <a href="rating.HTML"><button id="checkout" class="button3">結帳</button></a>
+         </div>
+    </div>
+    <div class="area4">
+        <p>        
+            官方客服LINE : @jcatcat02
+
+            客服專線：03-123-321
+            客服時間：10:00-17:00
+            信箱：meow@mail.com
+            地址：桃園市中壢區中北路200號   </p>
+    </div>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/2.2.0/iconify-icon.min.js"></script>
+</body>
+</html>

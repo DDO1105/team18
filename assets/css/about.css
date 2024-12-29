@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: radial-gradient(circle, transparent 20%, #f2cc8f 20%, #f2cc8f 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #f2cc8f 20%, #f2cc8f 80%, transparent 80%, transparent) 25px 25px, linear-gradient(#cca360 2px, transparent 2px) 0 -1px, linear-gradient(90deg, #cca360 2px, #f2cc8f 2px) -1px 0;
+    background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1; /* 主體內容擴展以填滿空間 */
+  }
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    background-color: #f2cc8f;
+    padding: 10px 0;
+}
+
+.marquee-content {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 15s linear infinite;
+}
+
+.marquee-content span {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.marquee-content img {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 20px;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100vw); }
+    100% { transform: translateX(-100%); }
+}
+
+/*main*/
+
+
+main {
+    display: grid;
+    grid-template-rows: 20% 75% 5%;
+    grid-template-columns: 1fr 85% 1fr;
+    height: 100vh;
+}
+
+.area1,
+.area2 {
+    grid-column: 2 / 3;
+    background-color: #fff;
+    border: 4px solid transparent; /* 初始邊框透明 */
+    border-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M5 5 h90 v90 h-90 z" fill="none" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10 5"/></svg>') 20 stretch; /* 使用 SVG 模擬手繪風 */
+    padding: 10px; /* 內邊距 */
+    color: white;
+    text-align: center;
+}
+
+.area1 {
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: black;
+    font-family: 標楷體;
+}
+
+.area2 {
+    float: left;
+    position: relative;
+    text-align: left;
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.area2 a{
+    margin: 20px;
+    font-size: 20px;
+    font-family: 標楷體;
+}
+.area3 {
+    grid-row: 3 / 4;
+    grid-column: 1 / 4;
+    background-color: #84A59D;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.area3 p {
+    margin: 0;
+}
+.area2 img{
+    position: absolute;
+    bottom: 10px; /* 距離底部的間距 */
+    right: 10px; /* 距離右側的間距 */
+    max-width: 200px; /* 設定圖片的最大寬度以避免過大 */
+    height: auto; /* 保持圖片比例 */
+    z-index: 1; /* 確保圖片位於內容之上 */
+}
+@media (max-width: 768px) {
+    main {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+    }
+
+    .area1,
+    .area2,
+    .area3 {
+        grid-column: 1 / 2;
+    }
+
+    .area3 {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    header .search-bar {
+        margin-top: 10px;
+    }
+    .product-card {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+}

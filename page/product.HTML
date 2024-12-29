@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品頁面</title>
+    <link rel="stylesheet" href="../assets/css/product.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/discount.css">
+    <script src="https://code.iconify.design/iconify-icon/2.2.0/iconify-icon.min.js"></script>
+    <script src="../assets/js/main.js" defer></script>
+    <script src="../assets/js/contents.js" defer></script>
+</head>
+    <body>
+        <header>
+            <div class="logo"><a href="../index.html"><img class="logopic" src="../assets/pic/logo.png" alt="Logo"></a></div>
+            <div class="midheader">
+                <ul class="drop-down-menu">
+                    <li>
+                        <a href="../index.html">首頁</a>
+                        <ul>
+                            <li><a href="../index.html#z1">優惠活動</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="about.html">關於我們</a>
+    
+                    </li>
+                    <li>
+                        <a href="contents.html">貓舍</a>
+    
+                    </li>
+                    <li>
+                        <a >會員專區</a>
+                        <ul>
+                            <li><a href="member.HTML">會員中心</a></li>
+                            <li><a href="register.HTML">會員註冊</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contents.html">品種</a>
+                        <ul>
+                            <li><a href="content_cat/long_cat.html">長毛貓</a></li>
+                            <li><a href="content_cat/short_cat.html">短毛貓</a></li>
+                            <li><a href="content_cat/meme_cat.html">迷因貓</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="content_cat/cat_tool.html">用品</a>
+                        <ul>
+                            <li><a href="content_cat/cat_sand.html">貓砂</a></li>
+                            <li><a href="content_cat/cat_food.html">飼料</a></li>
+                            <li><a href="content_cat/cat_toy.html">玩具</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <nav class="rightheader">
+                <a href="#my-modal" class="button"><iconify-icon icon="mdi:account-outline" width="30" height="30">
+                    <div id="my-modal" class="modalable">
+                        <div class="modal-inner">
+                            <a class="modal-close" href="#nowhere">&times;</a>
+                            <div class="modal-title">登入</div>
+                            <div class="modal-body">
+                                <form >
+                                    <ul>
+                                        <li>帳號︰<input class="input2" type="text" name="user" /><br/></li>
+                                        <li>密碼︰<input class="input2" type="text" name="password" /><br/></li>
+                                        <div class="logindisplay"><input class="button2" type="submit" value="登入" /></div>
+                                    </ul>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </iconify-icon></a>
+                <a href="payment.html" class="cart-icon">
+                    <iconify-icon icon="mdi:cart-outline" width="30" height="30"></iconify-icon>
+                    <span class="cart-count">0</span>
+                </a>
+                <a href="#"><iconify-icon id="search-icon" icon="material-symbols:search" width="30" height="30"></iconify-icon></a>
+                <input type="text" id="search-input" placeholder="搜尋商品..." style="display:none;">
+            </nav>
+        </header>
+    <body>
+    <main class="background">
+        <div class="content">
+            <aside class="sidebar">
+                <div class="category">
+                    <div class="category-item">貓舍
+                        <div class="submenu">
+                            <a href="#">北部</a>
+                            <a href="#">中部</a>
+                            <a href="#">南部</a>
+                        </div>
+                    </div>
+                    <div class="category-item">流浪貓
+                        <div class="submenu">
+                            <a href="#">台灣之心愛護動物協會</a>
+                            <a href="#">流浪動物之家</a>
+                            <a href="#">全國動物收容中心</a>
+                        </div>
+                    </div>
+                    <div class="category-item">品種
+                        <div class="submenu">
+                            <a href="#">長毛貓</a>
+                            <a href="#">短毛貓</a>
+                        </div>
+                    </div>
+                    <div class="category-item">貓咪用品
+                        <div class="submenu">
+                            <a href="#">貓砂</a>
+                            <a href="#">飼料</a>
+                            <a href="#">玩具</a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <div class="main-content">
+                <div class="product-container">
+                    <div class="image">
+                        <img src="../assets/pic/cattery01.png" alt="Product Image">
+                    </div>
+                    <div class="details">
+                        <div class="product-name">阿福狗
+                        </div>
+                        <div class="pricing">
+                            <div class="price">$100</div>
+                            <div class="star" id="star-rating1">
+                                <iconify-icon icon="material-symbols:star" width="24" height="24"></iconify-icon>
+                                <iconify-icon icon="material-symbols:star" width="24" height="24"></iconify-icon>
+                                <iconify-icon icon="material-symbols:star" width="24" height="24"></iconify-icon>
+                                <iconify-icon icon="material-symbols:star-outline" width="24" height="24" data-index="4" class="star-icon"></iconify-icon>
+                                <iconify-icon icon="material-symbols:star-outline" width="24" height="24" data-index="5" class="star-icon"></iconify-icon>
+                            </div>
+                        </div>
+                        <div class="descrip">
+                            <div class="description">
+                                <div class="power">可愛度:</div>                            
+                                    <div class="star-1" >
+                                    <iconify-icon icon="material-symbols:star" width="24" height="24"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star" width="24" height="24"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star" width="24" height="24"></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star-outline" width="24" height="24" ></iconify-icon>
+                                    <iconify-icon icon="material-symbols:star-outline" width="24" height="24" ></iconify-icon>
+                                </div>
+                                <div class="power">肥胖度:</div>                            
+                                <div class="star-1" >
+                                <iconify-icon icon="material-symbols:star" width="24" height="24"></iconify-icon>
+                                <iconify-icon icon="material-symbols:star" width="24" height="24"></iconify-icon>
+                                <iconify-icon icon="material-symbols:star" width="24" height="24"></iconify-icon>
+                                <iconify-icon icon="material-symbols:star" width="24" height="24"></iconify-icon>
+                                <iconify-icon icon="material-symbols:star" width="24" height="24"></iconify-icon>
+                                </div>
+                                <div class="power">黏人程度:</div>                            
+                                <div class="star-1" >
+                                <iconify-icon icon="material-symbols:star" width="24" height="24"></iconify-icon>
+                                <iconify-icon icon="material-symbols:star" width="24" height="24"></iconify-icon>
+                                <iconify-icon icon="material-symbols:star" width="24" height="24"></iconify-icon>
+                                <iconify-icon icon="material-symbols:star-outline" width="24" height="24" ></iconify-icon>
+                                <iconify-icon icon="material-symbols:star-outline" width="24" height="24" ></iconify-icon>
+                                <p class="introduce_good">這是一隻小胖狗，會到處跟人吵架，後面握想不到，所以湊字數看板面後面握想不到，所以湊字數看板面後面握想不到，所以湊字數看板面後面握想不到，所以湊字數看板面後面握想不到，所以湊字數看板面
+                                </p>
+                        </div>
+                            </div>
+                        </div>
+                        <div><button class="add-to-cart">加入購物車</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="recommend">
+            <div class="recommendationsad">
+                    推薦類似商品
+            </div>
+        </div>
+        <div class="recommend">
+            <section class="product-grid">
+                <div class="product">
+                    <img src="../assets/pic/cattery01.png" alt="Product 1">
+                    <p>阿志阿袙吃</p>
+                </div>
+                <div class="product">
+                    <img src="../assets/pic/cattey02.png" alt="Product 2">
+                    <p>呱呱鵝</p>
+                </div>
+                <div class="product">
+                    <img src="../assets/pic/c1.jpg" alt="Product 3">
+                    <p>嘻嘻貓</p>
+                </div>
+                <div class="product">
+                    <img src="../assets/pic/c2.png" alt="Product 4">
+                    <p>胖周瑜</p>
+                </div>
+            </section>
+        </div>
+        <div class="recommend">
+            <div class="recommendations">
+                <div class="slideshow-container">
+                    <!-- 優惠優惠-->
+                    <div class="mySlides">
+                      <img class="slided" src="../assets/pic/cs9.png" alt="Slide 1">
+                    </div>
+                    <div class="mySlides">
+                      <img class="slided" src="../assets/pic/cs8.png" alt="Slide 2">
+                    </div>
+                    <div class="mySlides">
+                      <img class="slided" src="../assets/pic/cs7.png" alt="Slide 3">
+                    </div>
+                  
+                 
+                    <div class="prev" onclick="plusSlides(-1)">❮</div>
+                    <div class="next" onclick="plusSlides(1)">❯</div>
+                  </div>
+                  
+                  <div class="dot-container">
+                    <span class="dot" onclick="currentSlide(0)"></span>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                  </div>
+                  <script src="../assets/js/discount.js"></script>
+                     <!-- 優惠end -->
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>官方客服LINE: @monstercat02 &nbsp;
+            客服專線: 03-123-321 &nbsp;
+            客服時間: 10:00 ~ 17:00 &nbsp;
+            信箱: meow@gmail.com &nbsp;
+            地址: 桃園市中壢區中北路200號
+        </p>
+    </footer>  
+</body>
+</html>
